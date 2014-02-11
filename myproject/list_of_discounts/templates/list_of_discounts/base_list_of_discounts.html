@@ -1,0 +1,13 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'list_of_discounts/list_of_discounts_style.css' %}" />
+</head>
+<body>
+	{% block content %}{% endblock %}
+</body>
+</html>

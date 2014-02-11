@@ -1,0 +1,18 @@
+{% extends "list_of_discounts/base_list_of_discounts.html" %}
+
+{% block title %}
+    Fresh list of discounts
+{% endblock %}
+
+{% block content %}
+	<a class="list_of_discounts_button" href="{% url 'list_of_discounts:take_list_of_discounts' %}">Take data</a>
+	{% if fresh_list_of_discounts %}
+	    <ul>
+	    {% for discount in fresh_list_of_discounts %}
+	        <li class="list_of_discounts_list"><a href="{% url 'list_of_discounts:main_page_list_of_discounts' %}{{ discount.id }}">{{ discount.date_save }}</a></li>
+	    {% endfor %}
+	    </ul>
+	{% else %}
+	    <p>No list.</p>
+	{% endif %}
+{% endblock %}

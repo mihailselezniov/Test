@@ -1,0 +1,35 @@
+{% extends "list_of_discounts/base_list_of_discounts.html" %}
+
+{% block title %}
+    List of discounts
+{% endblock %}
+
+{% block content %}
+	{% if store_lists_of_discounts %}
+	<dl>
+	    <dt>id</dt>
+	        <dd>{{ store_lists_of_discounts.id }}</dd>
+	    <dt>date_save</dt>
+	        <dd>{{ store_lists_of_discounts.date_save }}</dd>
+	    <dt>data</dt>
+	        <dd>
+	            <table>
+	                <tr>
+	                	<th>Discount</th>
+	                	<th>Title</th>
+	                	<th>Category</th>
+	                </tr>
+	                {% for discount in store_lists_of_discounts.data %}
+	                <tr>
+	                    <td>{{ discount.discount }}</td>
+	                    <td>{{ discount.title }}</td>
+	                    <td>{{ discount.category }}</td>
+	                </tr>
+	                {% endfor %}
+	        	</table>
+	        </dd>
+	</dl>
+	{% else %}
+	    <p>No data.</p>
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,68 @@
+body {
+	font-size: 11px;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    margin: 20px;
+}
+dt {
+	padding: 10px;
+	font-weight: bold;
+	color: #45688E;
+}
+.list_of_discounts_button {
+	padding: 6px 16px;
+	border: 0;
+	border-bottom: 1px solid #496b93;
+	text-shadow: 0 1px 0 #5578A0;
+	background: #658AB0;
+	color: #FFF;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 11px;
+	margin: 0px;
+	cursor: pointer;
+	white-space: nowrap;
+	outline: none;
+	vertical-align: top;
+	overflow: visible;
+	line-height: 13px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	display: inline-block;
+	align-items: flex-start;
+	text-align: center;
+	text-decoration: none;
+}
+
+.list_of_discounts_button:hover{
+	background-position: 0px -5px;
+	border-bottom-color: #4e7199;
+	opacity: 0.9;
+}
+
+.list_of_discounts_list a {
+	color: #45688E;
+    text-decoration: none;
+    padding: 6px 16px;
+	line-height: 13px;
+    width: auto;
+    -webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.list_of_discounts_list {
+	list-style: none;
+	display: table;
+	padding: 6px 16px;
+	line-height: 13px;
+	vertical-align: top;
+}
+
+.list_of_discounts_list a:hover {
+	background: #F1F1F1;
+}
